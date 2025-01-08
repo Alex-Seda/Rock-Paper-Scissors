@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="10-rock-paper-scissors.css">
+  </head>
+  <body>
+
+    <!-- Header of Page -->
+    <header>
+      Rock Paper Scissors Game
+    </header>
+
+    <!-- Buttons to select your move -->
+    <div class="move-select-buttons">
+      <button class="rock-button" onclick="choose(`rock`);">
+        <img class="move-icon" src="rock-paper-scissors-icons/rock-emoji.png">
+      </button>
+      <button class="paper-button" onclick="choose(`paper`);">
+        <img class="move-icon" src="rock-paper-scissors-icons/paper-emoji.png">
+      </button>
+      <button class="scissors-button" onclick="choose(`scissors`);">
+        <img class="move-icon" src="rock-paper-scissors-icons/scissors-emoji.png">
+      </button>
+    </div>
+
+    <!-- Game result, moves, and score display, with a button to reset the score count -->
+    <div class="score-tracking">
+      <!-- These are divs instead of paragraphs to prevent the automatic indenting when the page loads -->
+      <!-- This allows for complete control over content formatting without dealing with as many default settings -->
+      <div class="js-result game-result"></div>
+      <div class="js-moves game-moves"></div>
+      <div class="js-score game-score"></div>
+
+      
+      <button class ="reset-button" onclick="resetScore();">
+        Reset Score
+      </button>
+    </div>
+
+    <!-- Load JavaScript code to run backend -->
+    <script src="scripts/10-rock-paper-scissors.js"></script>
+  </body>
+</html>

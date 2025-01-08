@@ -1,0 +1,68 @@
+body{
+  display:flex;
+  flex-direction:column;
+  font-family: Arial;
+  background-color: rgb(34, 34, 34);
+  color:white;
+  align-items: center;
+  margin-bottom: 200px;
+  width:500px;
+  margin:auto;
+}
+
+
+
+
+header{
+  font-size: 30px;
+  font-weight:700;
+  margin:20px;
+}
+
+
+
+
+/* Classes for the move selection buttons */
+.move-select-buttons{
+  display:flex;
+}
+.rock-button,
+.paper-button,
+.scissors-button{
+  background: none;
+  color:white;
+  border-style:solid;
+  border-color:white;
+  border-radius:70px;
+  height: 120px;
+  width: 120px;
+  margin: 10px 6px;
+  cursor:pointer;
+}
+.move-icon{
+  height:60px;
+  z-index: 2;
+}
+
+
+
+
+/* Classes for score tracking and reset */
+.score-tracking{
+  margin-top:20px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.game-result{
+  font-size: 25px;
+  font-weight: bold;
+}
+.reset-button{
+  color:white;
+  background-color: rgb(34, 34, 34);
+  width:200px;
+  height:40px;
+  cursor:pointer;
+}
